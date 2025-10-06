@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cosmic-brain-game/static/css/main.febe3ee1.css",
+    "main.js": "/cosmic-brain-game/static/js/main.46f5e25e.js",
+    "static/js/453.df162b36.chunk.js": "/cosmic-brain-game/static/js/453.df162b36.chunk.js",
+    "index.html": "/cosmic-brain-game/index.html",
+    "main.febe3ee1.css.map": "/cosmic-brain-game/static/css/main.febe3ee1.css.map",
+    "main.46f5e25e.js.map": "/cosmic-brain-game/static/js/main.46f5e25e.js.map",
+    "453.df162b36.chunk.js.map": "/cosmic-brain-game/static/js/453.df162b36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.febe3ee1.css",
+    "static/js/main.46f5e25e.js"
+  ]
+}
