@@ -1,0 +1,50 @@
+.insight-display {
+  margin-top: 10px;
+  background-color: rgba(140, 100, 255, 0.15);
+  border: 1px solid #8c64ff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 15px rgba(140, 100, 255, 0.3);
+  min-width: 120px;
+  justify-content: center;
+}
+
+.insight-icon {
+  font-size: 1.3rem;
+}
+
+.insight-amount {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #c5adff;
+}
+
+.insight-label {
+  font-size: 0.8rem;
+  color: #c5adff;
+  opacity: 0.8;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+  .insight-display {
+    padding: 6px 10px;
+    gap: 6px;
+    min-width: 100px;
+  }
+  
+  .insight-icon {
+    font-size: 1.1rem;
+  }
+  
+  .insight-amount {
+    font-size: 1rem;
+  }
+  
+  .insight-label {
+    font-size: 0.7rem;
+  }
+}

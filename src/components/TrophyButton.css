@@ -1,0 +1,28 @@
+.trophy-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(145deg, #feca57, #ff9f43);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(254, 202, 87, 0.4);
+  z-index: 1500;
+  touch-action: manipulation; /* Mejora la respuesta táctil */
+}
+
+@media (max-width: 480px) {
+  .trophy-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+    top: 10px;
+    left: 10px;
+  }
+}

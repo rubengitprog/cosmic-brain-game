@@ -1,0 +1,97 @@
+.dopamine-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dopamine-message {
+  position: relative;
+  text-align: center;
+  z-index: 2001;
+  background: rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 3px solid gold;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), 
+              inset 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.dopamine-message h2 {
+  color: gold;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  animation: pulse 1s infinite alternate;
+}
+
+.dopamine-message .level-indicator {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.dopamine-particle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Colores aleatorios para las partículas */
+.dopamine-particle:nth-child(4n) {
+  background: radial-gradient(circle, #ff6b6b, #ff8e53);
+}
+
+.dopamine-particle:nth-child(4n+1) {
+  background: radial-gradient(circle, #4ecdc4, #5bceff);
+}
+
+.dopamine-particle:nth-child(4n+2) {
+  background: radial-gradient(circle, #feca57, #ff9f43);
+}
+
+.dopamine-particle:nth-child(4n+3) {
+  background: radial-gradient(circle, #a29bfe, #fd79a8);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px gold, 0 0 30px gold;
+  }
+  to {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px gold, 0 0 40px gold;
+  }
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .dopamine-message {
+    padding: 20px;
+    border-width: 2px;
+  }
+  
+  .dopamine-message h2 {
+    font-size: 2rem;
+  }
+  
+  .dopamine-message .level-indicator {
+    font-size: 1.2rem;
+  }
+  
+  .dopamine-particle {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,39 @@
+.event-display-container {
+  position: absolute;
+  top: 150px; /* Debajo del HUD principal */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff6b6b, #feca57);
+  color: #1a1a2e;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.5);
+  text-align: center;
+  z-index: 100;
+  width: 300px;
+}
+
+.event-display-container h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.event-display-container p {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.timer-bar-background {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.timer-bar-foreground {
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+}

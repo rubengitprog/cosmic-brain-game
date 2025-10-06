@@ -1,0 +1,159 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #00d2d3;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 95%;
+  max-width: 600px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 210, 211, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-header h2 {
+  color: #61dafb;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Reutilizando y adaptando estilos de Achievements.css */
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 5px; /* Espacio para la barra de scroll */
+  flex: 1;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 12px;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.achievement-item.unlocked {
+  opacity: 1;
+  background-color: rgba(97, 218, 251, 0.1);
+}
+
+.achievement-icon {
+  font-size: 1.8rem;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.achievement-details h3 {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.achievement-details p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+/* Scrollbar para la lista de logros */
+.achievements-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.achievements-list::-webkit-scrollbar-track {
+  background: rgba(26, 26, 46, 0.5);
+  border-radius: 3px;
+}
+
+.achievements-list::-webkit-scrollbar-thumb {
+  background: #5f27cd;
+  border-radius: 3px;
+}
+
+.achievements-list::-webkit-scrollbar-thumb:hover {
+  background: #00d2d3;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px 15px;
+    max-height: 90vh;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .close-button {
+    font-size: 1.8rem;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .achievement-item {
+    padding: 10px;
+  }
+  
+  .achievement-icon {
+    font-size: 1.6rem;
+    margin-right: 10px;
+  }
+  
+  .achievement-details h3 {
+    font-size: 1rem;
+  }
+  
+  .achievement-details p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,126 @@
+.rebirth-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(145deg, #ff6b6b, #ff9f43);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1500;
+  touch-action: manipulation; /* Mejora la respuesta táctil */
+}
+
+.confirmation-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  backdrop-filter: blur(8px);
+}
+
+.confirmation-modal-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #ff6b6b;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.confirmation-modal-content h2 {
+  color: #ff6b6b;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.confirmation-modal-content p {
+  font-size: 1rem;
+  color: #eee;
+}
+
+.confirmation-modal-content .bonus-text {
+  font-size: 1.2rem;
+  color: #feca57;
+  margin: 20px 0;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.confirmation-buttons button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  flex: 1;
+  min-width: 120px;
+}
+
+.confirmation-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.confirm-yes {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.confirm-no {
+  background-color: #555;
+  color: white;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+  .rebirth-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .confirmation-modal-content {
+    padding: 20px 15px;
+  }
+  
+  .confirmation-modal-content h2 {
+    font-size: 1.3rem;
+  }
+  
+  .confirmation-modal-content p {
+    font-size: 0.9rem;
+  }
+  
+  .confirmation-modal-content .bonus-text {
+    font-size: 1.1rem;
+  }
+  
+  .confirmation-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .confirmation-buttons button {
+    padding: 15px;
+    min-width: auto;
+  }
+}

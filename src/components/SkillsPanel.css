@@ -1,0 +1,101 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #4ecdc4;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(78, 205, 196, 0.2);
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  color: #4ecdc4;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Reutilizando y adaptando estilos de Skills.css */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  overflow-y: auto;
+  padding-right: 10px; /* Espacio para la barra de scroll */
+  flex: 1;
+}
+
+/* Scrollbar para la lista de habilidades */
+.skills-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.skills-grid::-webkit-scrollbar-track {
+  background: rgba(26, 26, 46, 0.5);
+  border-radius: 4px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+  background: #5f27cd;
+  border-radius: 4px;
+}
+
+.skills-grid::-webkit-scrollbar-thumb:hover {
+  background: #00d2d3;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+    width: 95%;
+    max-height: 85vh;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .close-button {
+    font-size: 2rem;
+  }
+}
