@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Getting Started with Create React App",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "cosmic-brain-game",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "cosmic-brain-game",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
