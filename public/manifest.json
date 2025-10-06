@@ -2,6 +2,7 @@
   "short_name": "CosmicBrain",
   "name": "Cosmic Brain Game",
   "description": "Un juego cerebral interactivo y adictivo.",
+  
   "icons": [
     {
       "src": "favicon.ico",
